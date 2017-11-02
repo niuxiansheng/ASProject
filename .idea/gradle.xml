@@ -8,9 +8,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Multithreading" />
+            <option value="$PROJECT_DIR$/MyView" />
             <option value="$PROJECT_DIR$/NotificationAPP" />
-            <option value="$PROJECT_DIR$/myapplication" />
-            <option value="$PROJECT_DIR$/myapplication3" />
+            <option value="$PROJECT_DIR$/SimpleApplication" />
+            <option value="$PROJECT_DIR$/baselibrary" />
+            <option value="$PROJECT_DIR$/myapplication2" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

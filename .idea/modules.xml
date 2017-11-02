@@ -3,9 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ASProject.iml" filepath="$PROJECT_DIR$/ASProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Multithreading/Multithreading.iml" filepath="$PROJECT_DIR$/Multithreading/Multithreading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyView/MyView.iml" filepath="$PROJECT_DIR$/MyView/MyView.iml" />
       <module fileurl="file://$PROJECT_DIR$/NotificationAPP/NotificationAPP.iml" filepath="$PROJECT_DIR$/NotificationAPP/NotificationAPP.iml" />
-      <module fileurl="file://$PROJECT_DIR$/myapplication/myapplication.iml" filepath="$PROJECT_DIR$/myapplication/myapplication.iml" />
-      <module fileurl="file://$PROJECT_DIR$/myapplication3/myapplication3.iml" filepath="$PROJECT_DIR$/myapplication3/myapplication3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleApplication/SimpleApplication.iml" filepath="$PROJECT_DIR$/SimpleApplication/SimpleApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baselibrary/baselibrary.iml" filepath="$PROJECT_DIR$/baselibrary/baselibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myapplication2/myapplication2.iml" filepath="$PROJECT_DIR$/myapplication2/myapplication2.iml" />
     </modules>
   </component>
 </project>

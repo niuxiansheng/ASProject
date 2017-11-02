@@ -1,1 +1,1 @@
-include ':myapplication', ':NotificationAPP', ':myapplication3'
+include ':SimpleApplication', ':NotificationAPP', ':MyView', ':Multithreading', ':baselibrary', ':myapplication2'
