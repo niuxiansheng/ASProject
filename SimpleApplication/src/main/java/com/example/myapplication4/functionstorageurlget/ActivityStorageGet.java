@@ -122,7 +122,7 @@ public class ActivityStorageGet extends Activity implements View.OnClickListener
                         }
 
                         if (info.isMounted()) {
-                            info.isRemoveable = (boolean) isRemovable.invoke(obj, new Objects[0]);
+                            info.isRemoveable = (boolean) isRemovable.invoke(obj, new Object[0]);
                             storagges.add(info);
                         }
                     }

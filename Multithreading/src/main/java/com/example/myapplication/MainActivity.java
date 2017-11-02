@@ -1,4 +1,4 @@
-package com.example.myapplication4;
+package com.example.myapplication;
 
 import android.app.ProgressDialog;
 import android.graphics.Bitmap;
@@ -11,8 +11,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-
-import com.example.myapplication.R;
 
 import java.io.IOException;
 import java.io.InputStream;
