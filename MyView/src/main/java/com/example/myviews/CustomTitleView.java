@@ -18,7 +18,9 @@ import com.example.myapplication4.R;
 
 
 /**
- * Created by niutong on 2017-09-27.
+ *
+ * @author niutong
+ * @date 2017-09-27
  * Discription:
  */
 
@@ -73,20 +75,22 @@ public class CustomTitleView extends View{
             int attr = a.getIndex(i);
             switch (attr)
             {
-                case R.styleable.CustomTitleView_titleText:
+                case R.styleable.CustomTitleView_myText:
                     mTitleText = a.getString(attr);
                     break;
-                case R.styleable.CustomTitleView_mytitleTextColor:
+                case R.styleable.CustomTitleView_myTextColor:
                     mTitleTextColor = a.getColor(attr, Color.BLACK);
                     break;
-                case R.styleable.CustomTitleView_titleTextSize:
+                case R.styleable.CustomTitleView_myTextSize:
                     mTitleTextSize = a.getDimensionPixelSize(attr, (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 16, getResources().getDisplayMetrics()));
                     break;
-                case R.styleable.CustomTitleView_image:
+                case R.styleable.CustomTitleView_myImageResource:
                     mImage = BitmapFactory.decodeResource(getResources(), a.getResourceId(attr, 0));
                     break;
-                case R.styleable.CustomTitleView_imageScaleType:
+                case R.styleable.CustomTitleView_myImageScaleType:
                     mImageScale = a.getInt(attr, 0);
+                    break;
+                default:
                     break;
             }
         }

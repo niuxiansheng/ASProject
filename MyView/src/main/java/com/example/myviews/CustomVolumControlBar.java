@@ -17,8 +17,10 @@ import android.view.View;
 import com.example.myapplication4.R;
 
 /**
- * Created by niutong on 2017-10-13.
- * Discription:
+ *
+ * @author niutong
+ * @date 2017-10-13
+ * Discription:声音控制器控件
  */
 
 public class CustomVolumControlBar extends View {

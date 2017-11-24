@@ -8,8 +8,10 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * Created by niutong on 2017-09-07.
- * Discription:
+ *
+ * @author niutong
+ * @date 2017-09-07
+ * Discription:圆形等待框
  */
 
 public class CustomCircleView extends View {

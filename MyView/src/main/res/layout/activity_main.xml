@@ -13,11 +13,11 @@
         <!--android:id="@+id/circle"-->
         <!--android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content"-->
-        <!--custom:titleText="hello android ! "-->
+        <!--custom:myText="hello android ! "-->
         <!--android:padding="10dp"-->
         <!--android:layout_margin="10dp"-->
         <!--custom:mytitleTextColor="#FF0000"-->
-        <!--custom:titleTextSize="30sp"-->
+        <!--custom:myTextSize="30sp"-->
         <!--custom:image="@mipmap/ic_launcher"-->
         <!--custom:imageScaleType="center"-->
         <!--/>-->
@@ -29,9 +29,9 @@
         <!--android:padding="10dp"-->
         <!--custom:image="@mipmap/ic_launcher"-->
         <!--custom:imageScaleType="center"-->
-        <!--custom:titleText="helloworldwelcome"-->
+        <!--custom:myText="helloworldwelcome"-->
         <!--custom:mytitleTextColor="#00FF00"-->
-        <!--custom:titleTextSize="20sp"-->
+        <!--custom:myTextSize="20sp"-->
         <!--/>-->
 
     <!--<com.example.myviews.CustomTitleView-->
@@ -41,9 +41,9 @@
         <!--android:padding="10dp"-->
         <!--custom:image="@mipmap/ic_launcher"-->
         <!--custom:imageScaleType="center"-->
-        <!--custom:titleText="妹子~"-->
+        <!--custom:myText="妹子~"-->
         <!--custom:mytitleTextColor="#FF0000"-->
-        <!--custom:titleTextSize="12sp"-->
+        <!--custom:myTextSize="12sp"-->
         <!--/>-->
 
    <!-- <Button
@@ -59,9 +59,47 @@
         <!--android:layout_height="match_parent"-->
         <!--&gt;</com.example.myviews.MyViewProgressBar>-->
 
-    <com.example.myviews.CustomVolumControlBar
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        custom:bg="@mipmap/ic_launcher"
-        />
+    <!--<com.example.myviews.CustomVolumControlBar-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--custom:bg="@mipmap/ic_launcher"-->
+        <!--/>-->
+
+    <com.example.myviews.OvalCornerImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:src="@drawable/selector_image_src" >
+    </com.example.myviews.OvalCornerImageView>
+
+    <com.example.myviews.OvalCornerImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@mipmap/user_nor"
+        custom:borderRadius="5dp"
+        custom:type="round" >
+    </com.example.myviews.OvalCornerImageView>
+
+    <com.example.myviews.OvalCornerImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@mipmap/user_nor"
+        custom:type="circle" >
+    </com.example.myviews.OvalCornerImageView>
+
+    <com.example.myviews.OvalCornerImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:src="@mipmap/user_nor"
+        custom:type="circle" >
+    </com.example.myviews.OvalCornerImageView>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_image_src"/>
 </LinearLayout>

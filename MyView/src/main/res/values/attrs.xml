@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <attr name="titleText" format="string" />
-    <attr name="mytitleTextColor" format="color" />
-    <attr name="titleTextSize" format="dimension" />
-    <attr name="image" format="reference" />
-    <attr name="imageScaleType">
+    <!--text-->
+    <attr name="myText" format="string" />
+    <!--mytextcolor-->
+    <attr name="myTextColor" format="color" />
+    <!--mytextsize-->
+    <attr name="myTextSize" format="dimension" />
+    <!--资源ID-->
+    <attr name="myImageResource" format="reference" />
+    <!--图片填充方式-->
+    <attr name="myImageScaleType">
         <enum name="fillXY" value="0" />
         <enum name="center" value="1" />
     </attr>
+    <!--图片圆角弧度值-->
+    <attr name="borderRadius" format="dimension" />
 
     <attr name="firstColor" format="color" />
     <attr name="secondColor" format="color" />
@@ -20,11 +27,11 @@
     <attr name="bg" format="reference" />
 
     <declare-styleable name="CustomTitleView">
-        <attr name="titleText" />
-        <attr name="mytitleTextColor" />
-        <attr name="titleTextSize" />
-        <attr name="image" />
-        <attr name="imageScaleType" />
+        <attr name="myText" />
+        <attr name="myTextColor" />
+        <attr name="myTextSize" />
+        <attr name="myImageResource" />
+        <attr name="myImageScaleType" />
     </declare-styleable>
 
     <declare-styleable name="CustomProgressBar">
@@ -41,6 +48,14 @@
         <attr name="dotCount"/>
         <attr name="splitSize"/>
         <attr name="bg"/>
+    </declare-styleable>
+
+    <declare-styleable name="Custom_oval_picture">
+        <attr name="borderRadius" />
+        <attr name="type">
+            <enum name="circle" value="0" />
+            <enum name="round" value="1" />
+        </attr>
     </declare-styleable>
 
 </resources>

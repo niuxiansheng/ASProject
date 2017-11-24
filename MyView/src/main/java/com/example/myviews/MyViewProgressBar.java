@@ -13,8 +13,10 @@ import android.view.View;
 import com.example.myapplication4.R;
 
 /**
- * Created by niutong on 2017-10-12.
- * Discription:
+ *
+ * @author niutong
+ * @date 2017-10-12
+ * Discription:进度条
  */
 
 public class MyViewProgressBar extends View{
