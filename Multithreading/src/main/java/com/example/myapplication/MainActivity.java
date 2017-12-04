@@ -12,9 +12,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.example.baselibrary.MyThreadPool;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
+import java.util.concurrent.ThreadPoolExecutor;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,8 +48,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 mProgressBar.setProgress(0);
                 mProgressBar.show();
-                
-                new Thread(){
+
+                ThreadPoolExecutor threadPoolExecutor = MyThreadPool.instance().getThreadPoolExecutor();
+
+                for (int i = 0; i < 5; i++) {
+                    threadPoolExecutor.execute(new Runnable() {
+                        @Override
+                        public void run() {
+                            System.out.println(Thread.currentThread().getName());
+                        }
+                    });
+                }
+
+                threadPoolExecutor.execute(new Runnable() {
                     @Override
                     public void run() {
                         Log.i("Load thread", ">>run");
@@ -59,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                             mHandler.sendMessage(msg);
                         }
                     }
-                }.start();
+                });
             }
         });
     }
@@ -93,6 +107,8 @@ public class MainActivity extends AppCompatActivity {
                 case MSG_LOAD_FAILURE:
                     mProgressBar.setMessage("Image downloading failure !");
                     mProgressBar.dismiss();
+                    break;
+                default:
                     break;
             }
         }
