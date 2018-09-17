@@ -14,6 +14,10 @@
         <activity android:name="com.example.myapplication4.functionstorageurlget.ActivityStorageGet">
         </activity>
         <activity android:name="com.example.myapplication4.mrecycleview.HomeActivity"></activity>
+        <activity android:name="com.example.myapplication4.drawerlayout.ui.DrawerLayoutTestActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>

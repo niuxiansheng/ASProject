@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.myapplication.R;
+import com.example.myapplication.databinding.ItemGuideListBinding;
 import com.example.myapplication4.baseConfig.DemoModule;
 
 import java.util.List;
@@ -51,12 +52,12 @@ public class ListAdapterGuideModule extends BaseAdapter{
         ViewHolder holder = null;
 
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.item_guide_list, null);
-
+            ItemGuideListBinding binding = ItemGuideListBinding.inflate(mInflater, null,false);
             holder = new ViewHolder();
-            holder.imageView = (ImageView) convertView.findViewById(R.id.imgItemIcon);
-            holder.textView = (TextView) convertView.findViewById(R.id.txtItemTitle);
+            holder.imageView = binding.imgItemIcon;
+            holder.textView = binding.txtItemTitle;
 
+            convertView = binding.getRoot();
             convertView.setTag(holder);
         }else {
             holder = (ViewHolder) convertView.getTag();

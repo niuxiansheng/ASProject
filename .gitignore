@@ -39,6 +39,7 @@ captures/
 .idea/gradle.xml
 .idea/dictionaries
 .idea/libraries
+.idea/
 
 # Keystore files
 # Uncomment the following line if you do not want to check your keystore files in.
@@ -54,3 +55,16 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
+Multithreading/libs/
+Multithreading/src/main/res/drawable/
+MyView/src/androidTest/
+MyView/src/test/
+SimpleApplication/src/main/java/com/example/myapplication4/mainlist/model/
+SimpleApplication/src/main/java/com/example/myapplication4/mainlist/view/
+baselibrary/libs/
+baselibrary/src/main/res/drawable/
+myapplication2/libs/
+myapplication2/src/main/jni/com_example_myapplication_JNIUtil.h
+myapplication2/src/main/jniLibs/
+myapplication2/src/main/obj/
+myapplication2/src/main/res/drawable/

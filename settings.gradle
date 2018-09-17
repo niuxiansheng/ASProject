@@ -1,1 +1,3 @@
-include ':SimpleApplication', ':NotificationAPP', ':MyView', ':Multithreading', ':baselibrary', ':myapplication2'
+include ':SimpleApplication', ':NotificationAPP', ':MyView', ':Multithreading', ':baselibrary'
+include ':NullProject'
+project(':NullProject').projectDir=new File(settingsDir, 'myapplication2')

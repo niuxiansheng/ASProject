@@ -9,4 +9,9 @@
         <item name="android:listDivider">@drawable/divider_recycle</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
 </resources>

@@ -2,13 +2,14 @@ package com.example.myapplication4.functionstorageurlget;
 
 import android.app.Activity;
 import android.content.Context;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.os.storage.StorageManager;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
 import com.example.myapplication.R;
+import com.example.myapplication.databinding.ActivityStorageBinding;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -19,7 +20,6 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.Objects;
 
 /**
  * Created by niutong on 2017-10-20.
@@ -30,17 +30,14 @@ import java.util.Objects;
 
 public class ActivityStorageGet extends Activity implements View.OnClickListener{
 
-    private Button button;
     private List<String> PathList = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_storage);
-        button = (Button) findViewById(R.id.btn);
-        button.setOnClickListener(this);
+        ActivityStorageBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_storage);
+        binding.setMyListener(new Presenter());
     }
-
 
     @Override
     public void onClick(View v) {
@@ -51,6 +48,13 @@ public class ActivityStorageGet extends Activity implements View.OnClickListener
                 ArrayList list = (ArrayList) listAvaliableStorage(this);
                 Log.d("", "TTT--->>> = " + list.toString());
                 break;
+        }
+    }
+
+    public class Presenter{
+
+        public void onTask(){
+            System.out.println("TTTTT --- Mark");
         }
     }
 

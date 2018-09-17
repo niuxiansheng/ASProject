@@ -5,6 +5,7 @@ import android.view.View;
 
 import com.example.myapplication.R;
 import com.example.myapplication4.baseConfig.DemoModule;
+import com.example.myapplication4.drawerlayout.ui.DrawerLayoutTestActivity;
 import com.example.myapplication4.functionstorageurlget.ActivityStorageGet;
 import com.example.myapplication4.mrecycleview.HomeActivity;
 
@@ -23,6 +24,8 @@ public class MainActivity extends GuideActivity implements View.OnClickListener{
         mGuideModules.add(new DemoModule(-1, R.string.recycleview, HomeActivity.class));
 
         mGuideModules.add(new DemoModule(-1, R.string.storage_get, ActivityStorageGet.class));
+
+        mGuideModules.add(new DemoModule(-1, R.string.DrawerLayoutTest, DrawerLayoutTestActivity.class));
     }
 
     @Override

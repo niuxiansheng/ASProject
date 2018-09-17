@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="guideList"
+            type="com.example.myapplication4.mainlist.bingding.DataActivityGuide" />
+    </data>
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ListView
-        android:id="@+id/listViewGuide"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="none"
-        android:listSelector="@drawable/common_list_selector"
+        <ListView
+            android:id="@+id/listViewGuide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:listSelector="@{guideList.commonListSelector}"
         />
-</LinearLayout>
+        <!--android:listSelector="@drawable/common_list_selector"-->
+    </LinearLayout>
+</layout>

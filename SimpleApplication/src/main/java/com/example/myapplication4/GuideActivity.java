@@ -1,13 +1,15 @@
 package com.example.myapplication4;
 
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ListView;
 
 import com.example.myapplication.R;
+import com.example.myapplication.databinding.ActivityGuideBinding;
 import com.example.myapplication4.baseAdapter.ListAdapterGuideModule;
 import com.example.myapplication4.baseConfig.DemoModule;
+import com.example.myapplication4.mainlist.bingding.DataActivityGuide;
 
 import java.util.List;
 
@@ -20,19 +22,22 @@ import java.util.List;
 
 public abstract class GuideActivity extends BaseActivity implements AdapterView.OnItemClickListener{
 
-    private ListView mListView = null;
     private ListAdapterGuideModule mAdapter = null;
+    private DataActivityGuide dataActivityGuide;
+    private ActivityGuideBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_guide);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_guide);
 
-        mListView = (ListView) findViewById(R.id.listViewGuide);
+        dataActivityGuide = new DataActivityGuide(R.drawable.common_list_selector);
+        binding.setGuideList(dataActivityGuide);
+
         mAdapter = new ListAdapterGuideModule(this, getGuideModules());
-        mListView.setAdapter(mAdapter);
-        mListView.setOnItemClickListener(this);
+        binding.listViewGuide.setAdapter(mAdapter);
+        binding.listViewGuide.setOnItemClickListener(this);
     }
     
     /**

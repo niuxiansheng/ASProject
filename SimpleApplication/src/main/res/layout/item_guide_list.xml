@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ImageView
-        android:id="@+id/imgItemIcon"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="2dp"
-        android:padding="2dp"
-        android:scaleType="fitCenter" />
+    <data>
+        <variable
+            name="guideListItem"
+            type="com.example.myapplication4.mainlist.bingding.DataItemGuideList" />
+    </data>
 
-    <TextView
-        android:id="@+id/txtItemTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:maxLines="1"
-        android:layout_gravity="center_vertical"
-        android:textSize="20sp" />
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgItemIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="2dp"
+            android:padding="2dp"
+            android:scaleType="fitCenter" />
+        <TextView
+            android:id="@+id/txtItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp" />
+    </LinearLayout>
+</layout>
 
-</LinearLayout>

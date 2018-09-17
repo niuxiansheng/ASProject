@@ -1,0 +1,9 @@
+ext{
+    commonDependence = [
+            'appcompat-v7'      : 'com.android.support:appcompat-v7:24.2.1',
+            'recyclerview-v7'   : 'com.android.support:recyclerview-v7:24.2.1',
+
+            'multidex'              : 'com.android.support:multidex:1.0.1',
+            'multidex-instrumentation' : 'com.android.support:multidex-instrumentation:1.0.1',
+    ]
+}
